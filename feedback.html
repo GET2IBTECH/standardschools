@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback - MFM Standard School</title>
+  <link rel="stylesheet" href="../mfm.css" />
+  <style>
+    form textarea {
+      width: 100%;
+      height: 100px;
+    }
+    .testimonial {
+      background: #fff;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .testimonial .name {
+      font-weight: bold;
+    }
+    .testimonial .class {
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MFM Standard Nursery and Primary School</h1>
+    <p>Farin Doki, Paikoro, Niger State</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="result.html">Result Checker</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News & Events</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Share Your Feedback</h2>
+      <p>We value your opinion. Please tell us what you think about our school.</p>
+
+      <form action="submit_feedback.php" method="post">
+        <label>Your Name:</label><br />
+        <input type="text" name="name" required /><br /><br />
+
+        <label>Your Class (if student):</label><br />
+        <input type="text" name="class" /><br /><br />
+
+        <label>Your Feedback:</label><br />
+        <textarea name="message" required></textarea><br /><br />
+
+        <input type="submit" value="Submit Feedback" />
+      </form>
+    </section>
+
+    <section>
+      <h3>Recent Testimonials</h3>
+
+      <div class="testimonial">
+        <p>"MFM School has really helped my child grow spiritually and academically."</p>
+        <p class="name">– Mrs. Comfort James</p>
+      </div>
+
+      <div class="testimonial">
+        <p>"I love the discipline and the way teachers care for the pupils."</p>
+        <p class="name">– Musa Ibrahim</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MFM Standard Nursery and Primary School. All rights reserved.</p>
+  </footer>
+  <script src="../mfm.js"></script>
+</body>
+</html>

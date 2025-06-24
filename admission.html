@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions - MFM Standard School</title>
+  <link rel="stylesheet" href="../mfm.css" />
+</head>
+<body>
+  <header>
+    <h1>MFM Standard Nursery and Primary School</h1>
+    <p>Farin Doki, Paikoro, Niger State</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admission.html" class="active">Admissions</a></li>
+        <li><a href="result.html">Result Checker</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News & Events</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Admissions</h2>
+      <p>
+        We welcome all children who seek to learn in a God-fearing, disciplined, and caring environment.
+      </p>
+
+      <h3>Admission Requirements</h3>
+      <ul>
+        <li>Birth Certificate</li>
+        <li>Passport Photograph (2 copies)</li>
+        <li>Last School Report (if transferring)</li>
+        <li>Completed Admission Form</li>
+      </ul>
+
+      <h3>Download Admission Form</h3>
+      <p><a href="forms/admission_form.pdf" download>Click here to download the admission form (PDF)</a></p>
+      <h3>Online Admission Form</h3>
+      <form action="../submit_admission.php" method="post">
+        <label>Full Name:</label><br />
+        <input type="text" name="full_name" required /><br /><br />
+
+        <label>Date of Birth:</label><br />
+        <input type="date" name="dob" required /><br /><br />
+
+        <label>Class Applying For:</label><br />
+        <input type="text" name="class_applied" required /><br /><br />
+
+        <label>Parent/Guardian Name:</label><br />
+        <input type="text" name="parent_name" required /><br /><br />
+
+        <label>Phone Number:</label><br />
+        <input type="tel" name="phone" required /><br /><br />
+
+        <label>Address:</label><br />
+        <textarea name="address" required></textarea><br /><br />
+
+        <label for="email">Parent Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <input type="submit" value="Submit Application" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MFM Standard Nursery and Primary School. All rights reserved.</p>
+  </footer>
+  <script src="../mfm.js"></script>
+</body>
+</html>

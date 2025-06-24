@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - MFM Standard School</title>
+  <link rel="stylesheet" href="../mfm.css" />
+  <style>
+    .contact-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    form textarea {
+      width: 100%;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MFM Standard Nursery and Primary School</h1>
+    <p>Farin Doki, Paikoro, Niger State</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="result.html">Result Checker</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News & Events</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-box">
+      <h2>Contact Us</h2>
+      <p>If you have any inquiries, suggestions, or complaints, please reach out to us using the form below or our contact details.</p>
+
+      <form action="../submit_contact.php" method="post">
+        <label>Full Name:</label><br />
+        <input type="text" name="name" required /><br /><br />
+
+        <label>Email Address:</label><br />
+        <input type="email" name="email" required /><br /><br />
+
+        <label>Phone Number:</label><br />
+        <input type="tel" name="phone" /><br /><br />
+
+        <label>Message:</label><br />
+        <textarea name="message" required></textarea><br /><br />
+
+        <input type="submit" value="Send Message" />
+      </form>
+
+      <h3>School Address</h3>
+      <p><strong>Address:</strong> Farin Doki, Paikoro LGA, Niger State</p>
+      <p><strong>Phone:</strong> 08148829306, 09136603015</p>
+      <p><strong>Email:</strong> ibrahimmusamuhdugg@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MFM Standard Nursery and Primary School. All rights reserved.</p>
+  </footer>
+  <script src="../mfm.js"></script>
+</body>
+</html>
